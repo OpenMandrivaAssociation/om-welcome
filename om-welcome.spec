@@ -10,6 +10,7 @@ Requires:	(kdialog or plasma6-kdialog)
 Requires:	htmlscript >= 1.2.0
 BuildRequires:	make
 BuildRequires:	gettext
+Obsoletes:	om-control-center
 BuildArch:	noarch
 %rename oma-welcome
 
