@@ -47,4 +47,5 @@ EOF
 %{_bindir}/om-welcome
 %{_bindir}/om-welcome-launcher
 %{_datadir}/%{name}/*
+%{_datadir}/applications/om-update.desktop
 %{_datadir}/applications/om-welcome.desktop
