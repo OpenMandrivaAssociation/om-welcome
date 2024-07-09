@@ -28,6 +28,20 @@ Startup and configuration tool for OpenMandriva Lx.
 
 %find_lang om-welcome
 
+# Adding update script
+install -d %{buildroot}%{_datadir}/applications
+cat << EOF > %{buildroot}%{_datadir}/applications/om-update.desktop
+[Desktop Entry]
+Name=System Update
+GenericName=System Update
+Comment=Check for available system update and then install them
+Exec=/usr/share/om-welcome/apps/updatesys.run
+Icon=/usr/share/om-welcome/images/system-update.svg
+Terminal=false
+Type=Application
+Categories=System
+EOF
+
 %files -f om-welcome.lang
 %{_sysconfdir}/xdg/autostart/om-welcome.desktop
 %{_bindir}/om-welcome
