@@ -1,5 +1,5 @@
 Name:		om-welcome
-Version:	2.8.0
+Version:	2.8.1
 Release:	1
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
