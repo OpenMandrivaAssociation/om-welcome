@@ -1,13 +1,13 @@
 Name:		om-welcome
-Version:	2.9.17
+Version:	2.9.19
 Release:	1
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
 Group:		System/Configuration/Other
 URL:		https://github.com/OpenMandrivaAssociation/om-welcome
-Source0:	%{name}-%version.tar.gz
-Requires:	(kdialog or plasma6-kdialog)
-Requires:	htmlscript >= 1.2.0
+Source0:	https://github.com/OpenMandrivaSoftware/om-welcome/archive/refs/tags/%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Requires:	kdialog
+Requires:	htmlscript >= 1.2.1
 BuildRequires:	make
 BuildRequires:	gettext
 Obsoletes:	om-control-center
